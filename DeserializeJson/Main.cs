@@ -17,9 +17,11 @@ namespace DeserializeJson
 
 			// Position stream to 0.
 			stream.Position = 0;
+
+			// Deserialize JSON data from stream
 			Person p = (Person)serializer.ReadObject(stream);
 
-			// Output JSON data to console.
+			// Output deserialized JSON data to console.
 			Console.WriteLine("Deserialize results:");
 			Console.WriteLine("name = {0}", p.name);
 			Console.WriteLine("age = {0}", p.age);
