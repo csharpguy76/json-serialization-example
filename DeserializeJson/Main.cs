@@ -9,7 +9,7 @@ namespace DeserializeJson
 	{
 		public static void Main (string[] args)
 		{
-
+			// Create a stream to read JSON content from a text file.
 			FileStream stream = new FileStream("Person.json", FileMode.Open);
 
 			// Serialize object of type Person.
