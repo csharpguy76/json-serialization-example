@@ -1,10 +1,12 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="JSONSerializerExample/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DeserializeJson/Person.cs">
     <Files>
-      <File FileName="JSONSerializerExample/Main.cs" Line="4" Column="24" />
-      <File FileName="JSONSerializerExample/Person.cs" Line="4" Column="24" />
-      <File FileName="JSONSerializerExample/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="SerializeJson/Main.cs" Line="13" Column="15" />
+      <File FileName="DeserializeJson/Main.cs" Line="15" Column="4" />
+      <File FileName="SerializeJson/Person.cs" Line="13" Column="20" />
+      <File FileName="DeserializeJson/Person.json" Line="5" Column="1" />
+      <File FileName="DeserializeJson/Person.cs" Line="4" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

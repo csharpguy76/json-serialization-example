@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+using System.Runtime.Serialization.Json;
+using System.Xml;
 
 namespace DeserializeJson
 {
@@ -6,7 +9,20 @@ namespace DeserializeJson
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+
+			FileStream stream = new FileStream("Person.json", FileMode.Open);
+
+			// Serialize object of type Person.
+			DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Person));
+
+			// Position stream to 0.
+			stream.Position = 0;
+			Person p = (Person)serializer.ReadObject(stream);
+
+			// Output JSON data to console.
+			Console.WriteLine("Deserialize results:");
+			Console.WriteLine("name = {0}", p.name);
+			Console.WriteLine("age = {0}", p.age);
 		}
 	}
 }
